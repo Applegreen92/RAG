@@ -1,4 +1,0 @@
-Unnamed: 0,question,answer,question_tokens,answer_tokens
-0,what is your return policy,our return policy lasts 30 days,"[101, 2054, 2003, 2115, 2709, 3343, 102]","[101, 2256, 2709, 3343, 16180, 2382, 2420, 102]"
-1,how do i reset my password,to reset your password click on,"[101, 2129, 2079, 1045, 25141, 2026, 20786, 102]","[101, 2000, 25141, 2115, 20786, 11562, 2006, 102]"
-2,do you offer technical support,yes we offer 247 technical support,"[101, 2079, 2017, 3749, 4087, 2490, 102]","[101, 2748, 2057, 3749, 23380, 4087, 2490, 102]"
