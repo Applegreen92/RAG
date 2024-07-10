@@ -1,15 +1,19 @@
+import os
+
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
+
 import faiss
-import numpy as np
 import pandas as pd
-import torch
 from transformers import AutoTokenizer, AutoModel
+import torch
 
 # Load the FAISS index
 index = faiss.read_index('faiss_index.bin')
+
 # Load the embeddings and text data
 df = pd.read_pickle('embeddings.pkl')
 
-# Load the tokenizer and model
+# Load the tokenizer and model from Hugging Face
 tokenizer = AutoTokenizer.from_pretrained('bert-base-uncased')
 model = AutoModel.from_pretrained('bert-base-uncased')
 model.eval()
@@ -31,6 +35,6 @@ def search(query, top_k=5):
 
 
 # Example query
-query = "bike sharing stations in city center"
+query = "what are benefits of bike sharing stations ?"
 results = search(query)
 print(results)
