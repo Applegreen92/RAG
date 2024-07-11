@@ -50,7 +50,7 @@ def clean_text(text):
 # Define the function to split text into token-based chunks
 def split_text_into_chunks_token_based(text, tokenizer, max_length=300, overlap=50):
     # Warning about chunksize can be ignored, due to overlap it is handled in this function
-    tokens = tokenizer.encode(text, return_tensors='pt')
+    tokens = tokenizer.encode(text)
 
     chunks = []
     i = 0

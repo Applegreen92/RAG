@@ -4,8 +4,9 @@ os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 
 import faiss
 import pandas as pd
-from transformers import AutoTokenizer, AutoModel
+from transformers import AutoTokenizer, AutoModel, AutoModelForCausalLM
 import torch
+
 
 # Load the FAISS index
 index = faiss.read_index('faiss_index.bin')
