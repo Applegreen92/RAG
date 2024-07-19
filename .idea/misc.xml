@@ -3,5 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="C:\Users\David\miniconda3" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="faq-chatbot" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="myRag" project-jdk-type="Python SDK" />
 </project>
